@@ -4,7 +4,7 @@
   MESSAGING OTHER USERS.
 
 # Technologies Used:
-  HTML, CSS, JavaScript, Node.js, AWS EC2, MySQL, Docker, Travis CI
+  HTML, CSS, JavaScript, Node.js, AWS EC2 LINUX INSTANCE, MySQL, Docker, Travis CI
   
 # Major Accomplished:
   1. IMPLEMENTED SOCKETS TO CREATE AN INSTANT MESSAGING FEATURE.
