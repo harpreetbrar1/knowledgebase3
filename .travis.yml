@@ -3,19 +3,19 @@ services:
  - docker
 
 before_install:
- - docker build -t harpreetbrar1/knowledgebase -f Dockerfile.dev .
+ - docker build -t harpreetbrar1/knowledgebase3 -f Dockerfile.dev .
 
 script:
- - docker run -e CI=true harpreetbrar1/knowledgebase npm run start
+ - docker run -e CI=true harpreetbrar1/knowledgebase3 npm run start
 
 deploy:
   - provider: elasticbeanstalk
   - access_key_id:
-      secure: "AKIATTIO7ZPO7IB75CW3"
+      secure: ""
   - secret_access_key:
-      secure: "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"
+      secure: ""
   - region: "us-west-2"
-  - app: "knowledgebase"
-  - env: "Knowledgebase-env"
-  - bucket_name: "elasticbeanstalk-us-west-2-247528934365"
+  - app: ""
+  - env: ""
+  - bucket_name: ""
     
