@@ -1,0 +1,19 @@
+
+{{#if searchByTopic}}
+{{> searchByTopic}}
+{{/if}}
+
+
+{{#each results}}
+<div class = 'search-post'>
+        <div class = 'search-post-subject'>{{this.subject}}</div>
+        <div class = 'search-post-topic'>{{this.topic}}</div>
+        <a href="/profile/{{this.iduser}}">
+        <img class= 'search-post-image' src = {{this.imageurl}} >
+        </a>
+        <div class = 'search-post-message'>{{this.content}}</div>
+        <br>
+        <div class = 'search-post-date'>{{this.date}}</div>
+        <div class = 'search-post-reply'>{{this.replies}} replies</div>
+    </div>
+{{/each}}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>{{ pageTitle }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href='/css/layout.css' type="text/css" rel="stylesheet" />
+	{{#if registerCSS}}
+	<link href='/css/register.css' type="text/css" rel="stylesheet" />
+	{{/if}}
+	{{#if landingCSS}}
+	<link href='/css/landing.css' type="text/css" rel="stylesheet" />
+	{{/if}}
+	{{#if aboutCSS}}
+	<link href='/css/about.css' type="text/css" rel="stylesheet" />
+	{{/if}}
+	{{#if messagingCSS}}
+	<link href='/css/messaging.css' type="text/css" rel="stylesheet" />
+	{{/if}}
+	{{#if userprofileCSS}}
+    <link href='/css/userprofile.css' type="text/css" rel="stylesheet" />
+	<link href='/css/landing.css' type="text/css" rel="stylesheet" />
+	{{/if}}
+	{{#if searchResultCardCSS}}
+	<link href='/css/searchResultCard.css' type="text/css" rel="stylesheet" />
+    {{/if}}
+    {{#if conversationCSS}}
+	<link href='/css/landing.css' type="text/css" rel="stylesheet" />
+	{{/if}}
+
+	{{#if searchByTopicCSS}}
+	<link href='/css/searchByTopic.css' type="text/css" rel="stylesheet" />
+	{{/if}}
+</head>
+
+<body>
+		
+		
+
+		
+		<nav class="navbar navbar-expand-sm bg-primary justify-content-end">
+			<a id="navbar-main" class="navbar-brand">KnowledgeBase</a>
+		{{#unless auth}}
+		<form id = 'search-form' action = 'http://localhost:3000/search' method="POST">
+  			<input id = 'search-bar' type="search" placeholder="Search..." name = 'searchValue'>
+		</form>
+		{{/unless}}
+	
+
+
+
+		
+		{{#if login}}
+		{{> loginPartial}}
+		{{else}}
+		{{> logoutPartial}}
+		{{/if}}
+	</nav>
+	<main class="container pt-4">
+		{{{body}}}
+		<p id="error-field">{{validation}}</p>
+	</main>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script defer src="http://localhost:5000/socket.io/socket.io.js"></script>
+{{#if messagingCSS}}
+<script defer type="text/javascript" src="/js/realTimeChat.js"></script>
+{{/if}}
+{{#if landingCSS}}
+<script defer type="text/javascript" src="/js/discussion.js"></script>
+{{/if}}
+
+{{#if userprofileCSS}}
+<script defer type="text/javascript" src="/js/discussion.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+{{/if}}
+
+{{#if userprofileCSS}}
+<script defer type="text/javascript" src="/js/discussion.js"></script>
+<script defer type="text/javascript" src="/js/likes.js"></script>
+{{/if}}
+
+{{#if conversationCSS}}
+<script defer type="text/javascript" src="/js/discussion.js"></script>
+{{/if}}
+
+</html>

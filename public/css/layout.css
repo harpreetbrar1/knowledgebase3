@@ -1,0 +1,31 @@
+#navbar-main{
+  color: whitesmoke
+}
+
+.dropdown-toggle {
+  margin-right: -10px;
+  color: white;
+}
+
+#error-field {
+  text-align: center;
+  color: red;
+}
+
+
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#search-form{
+    margin-left: 30%;    
+    width: 70%;
+    
+    
+}
+
+#search-bar{
+  width: 60%;
+}

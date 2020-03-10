@@ -1,0 +1,21 @@
+version : '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+      - "5000:5000"
+    volumes: 
+      - /app/node_modules
+      - .:/app
+    environment:
+      - DB_KEY=password
+      - DB_NAME=sys
+      - DB_PORT=3306
+      - DB_HOST=mydbinstance.cfaqm4nlljx3.us-west-2.rds.amazonaws.com
+      - DB_USER=admin
+      - SERVER_PORT=3000
+      - JWT_SECRET=harpreet
+      - SENDGRID_API_KEY=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

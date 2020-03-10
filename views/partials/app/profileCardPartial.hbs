@@ -1,0 +1,39 @@
+<div class="profile-area">
+    <div class="card" style="width: 18rem;">
+        <div class="card-area">
+            <a href="/profile/{{{userDetails.iduser}}}">
+                <img src={{userDetails.imageurl}}>
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">
+                    <span>{{userDetails.firstname}}</span>
+                    <span>{{userDetails.lastname}}</span>
+                </h5>
+                <p class="card-text">{{userDetails.about}}</p>
+                <div class="middle-profile">
+                    <ul class="list-group">
+                        <li class="d-flex justify-content-between align-items-center">
+                            <a href="/profilePosts/{{{userDetails.iduser}}}">
+                                Posts
+                            </a>
+                            <span class="badge badge-primary badge-pill">{{numberOfPosts}}</span>
+                        </li>
+                        <li class=" d-flex justify-content-between align-items-center">
+                            <a href="/messaging">
+                                Messages
+                            </a>
+                            <span class="badge badge-primary badge-pill">{{messageCount}}</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            Likes
+                            <span class="badge badge-primary badge-pill">{{likesCount}}</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lower-profile d-flex justify-content-between align-items-center">
+                    <p href="#" data-toggle="modal" data-target="#exampleModal">Edit Profile</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

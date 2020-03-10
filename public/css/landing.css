@@ -1,0 +1,185 @@
+h4{
+	margin-bottom: -4px;
+}
+
+.container{
+	text-align: center;
+}
+
+.card-area {
+    margin-top: 10%;
+}
+
+#post-form {
+    margin-top: 10%;
+}
+
+.post-area {
+    max-width: 600px;
+    margin: auto;
+}
+
+#post-box {
+    resize: none;
+    width: 100%;
+    height: 200px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#post-btn {
+    float: left;
+    width: 60px;
+    font-size: 16px;
+}
+
+#topic-select {
+    margin-bottom: 30px;
+}
+
+#latest-post-container {
+    width: 600px;
+    margin: auto;
+}
+
+#discussion-btn-pagination {
+    width: 600px;
+    margin: auto;
+}
+
+#next-btn {
+    width: 150px;
+    float: right;
+    margin: 30px 0px 0px 0px;
+}
+
+#prev-btn {
+    width: 150px;
+    float: left;
+    margin: 30px 0px 0px 0px;
+}
+
+#discussion-header {
+    margin: 100px 0px 50px 0px;
+}
+
+.card img {
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.name  {
+    padding-top:15px;
+    word-spacing: 4px;
+    padding-bottom:5px;
+}
+
+.middle-profile {
+    margin-top: 40px;
+}
+
+.lower-profile{
+    margin-top: 30px;
+}
+
+.card  p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.card li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.poster-profile-pic {
+    float: left;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+}
+
+.poster-profile-pic:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.discussion-topic {
+    margin-top: 25px;
+    float: right;
+}
+
+.discussion-subject {
+    margin-left: 10px;
+    text-align: left;
+    margin-top: 25px;
+}
+
+.discussion-text {
+    text-align: left;
+    padding: 40px 40px 0px 40px;
+}
+
+.post-info-item {
+    padding: 20px 40px 0px 40px;
+}
+
+.reply-toggle-container {
+    padding: 20px 40px 30px 40px;
+}
+
+.post-time-stamp {
+    float: left;
+}
+
+.discussion-replies {
+    text-decoration: underline;
+    float: right;
+}
+
+.discussion-replies:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.discussion-reply-profile-pic {
+    margin: 40px 20px 40px 40px;
+    float: left;
+}
+
+.discussion-reply-content {
+    margin: 40px 40px 40px 20px;
+    text-align: left;
+}
+
+.card-body a {
+color: black;
+}
+
+.comment-textarea {
+    resize: none;
+    width: 90%;
+    height: 200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.comment-btn {
+    float: right;
+    margin-bottom: 30px;
+}
+
+.comment-btn-container {
+    margin: 0px 40px 0px 40px;
+}
+
+
+#search-by-topic{
+    margin-left: 160px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-bottom: 20px;
+    
+    
+}

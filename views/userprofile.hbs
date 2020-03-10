@@ -1,0 +1,46 @@
+<div id="profile-container">
+    {{#if isPost}}
+    <div id="user-card-area" class="row">
+        <div class="col-sm-4">
+            <div class="row profile-pic">
+                <img id="user-photo" src={{userDetails.imageurl}}>
+            </div>
+            <div class="about-user">
+                <div id=" row user-name">
+                    <h3>{{userDetails.firstname}} {{userDetails.lastname}}</h3>
+                </div>
+                <div id="row about">
+                    <h5>{{userDetails.about}}</h5>
+                </div>
+                <div id="row location">
+                    <h5>{{userDetails.country}}</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8 profile-actions-container">
+            <div id="profile-actions-container">
+                <div id="message-btn-container">
+                    <button id="msg-btn" onclick="messageUser()">Message</button>
+                </div><br />
+                <div id="like-btn-container">
+                    <h5 id="likes-count">{{userDetails.likes}} Likes</h5>
+                    <button onclick="like()" id="like-btn"><i class='fas fa-plus'></i></button>
+                </div><br/>
+                <div id="post-counter">
+                    <h5 id="posts-count"> <a href="/profilePosts/{{{userDetails.iduser}}}"> Posts</a> </a></h5>
+                    <span class="badge badge-primary badge-pill">{{postCount}}</span>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    <div id="user-post-container" class="row">
+        <div id="post-header">
+            <h2>All posts byssssss {{userDetails.firstname}}</h2>
+        </div>
+        <div id="latest-post-container">
+            
+        </div>
+    </div>
+</div>

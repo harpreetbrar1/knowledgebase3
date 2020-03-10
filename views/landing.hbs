@@ -1,0 +1,40 @@
+<div id='landing-page'>
+  <div id='landing-main'>
+    <h1>{{heading}}</h1>
+  </div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    {{>editprofilePartial}}
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      {{> profileCardPartial userDetails=user }}
+    </div>
+    <div class="col-md-10">
+      <div class="post-area">
+        <h2>Whats your question today?</h2>
+        <div id="post-form">
+          {{> postPartial}}
+        </div>
+      </div>
+
+    
+      <div id = 'search-by-topic'>
+        {{> searchByTopic}}
+      </div>
+      <div id="discussion-area">
+        <h3 id="discussion-header">Latest Discussions</h3>
+        
+        {{> discussionPartial}}
+        <div class="row" id="discussion-btn-pagination">
+          <div class="col-sm-6">
+            <button id="prev-btn" class="btn btn-success btn-sm" onclick="renderPreviousPage()">Previous</button>
+          </div>
+          <div class="col-sm-6">
+            <button id="next-btn" class="btn btn-success btn-sm" onclick="renderNextPage()">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

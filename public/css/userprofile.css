@@ -1,0 +1,72 @@
+#profile-container {
+    margin: 50px 200px 0px 200px;
+    position: relative;
+}
+
+#user-photo {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+.profile-pic {
+    justify-content: center;
+}
+.about-user h5, h3 {
+text-align: left;
+}
+
+.about-user h5 {
+    text-align: left;
+    }
+#profile-actions-container {
+    position: absolute;
+    bottom: 20%;
+    left: 100%;
+}
+
+#profile-actions-container a {
+  color: black;
+}
+
+#msg-btn {
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #0074B5;
+    font-size: 25px;
+    color: white;
+}
+
+#like-btn {
+    height: 40px;
+    width: 40px;
+    border-style: solid;
+    border-radius: 100%;
+    background-color: #0074B5;
+    color: white;
+}
+
+#likes-count {
+    float:left;
+    margin-right: 10px;
+}
+
+#about {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#user-post-container {
+    margin-top: 50px;
+}
+
+#post-header {
+    margin: 0px auto 50px auto;
+}
+
+#posts-count {
+    float: left;
+}
+
+.about-user {
+    margin-top: 30px;
+}
