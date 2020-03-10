@@ -14,8 +14,8 @@ services:
       - DB_KEY=password
       - DB_NAME=sys
       - DB_PORT=3306
-      - DB_HOST=mydbinstance.cfaqm4nlljx3.us-west-2.rds.amazonaws.com
+      - DB_HOST=
       - DB_USER=admin
       - SERVER_PORT=3000
       - JWT_SECRET=harpreet
-      - SENDGRID_API_KEY=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
+      - SENDGRID_API_KEY=
